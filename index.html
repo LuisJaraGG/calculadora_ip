@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Calculadora de ip</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-3">
+                <h5 class="card-header">IP a transformar</h5>
+            </div>
+            <div class="col-1">
+                <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" name=""  id="byte1">
+            </div>
+            <div class="col-1">
+                <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" name=""  id="byte2">
+            </div>
+            <div class="col-1">
+                <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" name=""  id="byte3">
+            </div>
+            <div class="col-1">
+                <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control" name=""  id="byte4">
+            </div>
+            <div class="col-1">
+                <input type="number" onKeyPress="if(this.value.length==3) return false;" class="form-control bg-secondary text-white" value="20" name="" id="byte5">
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-4 text-center">
+                <div class="mb-3 col-12 text-center">
+                    <button class="btn btn-primary" id="boton">Convertir</button>
+                </div>
+                
+                <label for="basic-url" class="form-label">Dirección de red:</label>
+                <div class="input-group mb-3 col-4">
+                <input type="text" class="form-control" id="red" disabled>
+                </div>
+
+                <label for="basic-url" class="form-label">Dirección de subred:</label>
+                <div class="input-group mb-3 col-4">
+                <input type="text" class="form-control" id="subred" disabled>
+                </div>
+
+                <label for="basic-url" class="form-label">Dirección de broadcast:</label>
+                <div class="input-group mb-3 col-4">
+                <input type="text" class="form-control" id="broadcast" disabled>
+                </div>
+
+                <label for="basic-url" class="form-label">Primera dirección IP:</label>
+                <div class="input-group mb-3 col-4">
+                <input type="text" class="form-control" id="primeraip" disabled>
+                </div>
+
+                <label for="basic-url" class="form-label">Última dirección IP:</label>
+                <div class="input-group mb-3 col-4">
+                <input type="text" class="form-control" id="ultimaip" disabled>
+                </div>
+
+                <label for="basic-url" class="form-label">Direcciones IP disponibles:</label>
+                <div class="input-group mb-3 col-4">
+                <input type="text" class="form-control" id="ipdisponibles" disabled>
+                </div>
+            </div>
+
+        </div>    
+    </div>
+</body>
+<script src="logica.js"></script>
+</html>
