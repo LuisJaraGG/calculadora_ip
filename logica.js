@@ -13,7 +13,7 @@ let broadcast = document.getElementById("broadcast");
 let primerip = document.getElementById("primeraip");
 let ultimoip = document.getElementById("ultimaip");
 let direciiones = document.getElementById("ipdisponibles");
-//adicionales hahahah knsjd
+//adicionales 
 
 let bitsclase = 0
 let clase ="";
